@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0" version="26.0.4">
+  <mxGraphModel dx="1422" dy="791" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+    <root>
+      <mxCell id="0" />
+      <mxCell id="1" parent="0" />
+      
+      <!-- Nodes -->
+      <mxCell id="user_interface" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;USER INTERFACES&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;br&gt;[Monitor Icon]&lt;br&gt;Employee POS Terminal&lt;br&gt;Admin Control Center" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1;arcSize=10;verticalAlign=top;spacingTop=10;" parent="1" vertex="1">
+        <mxGeometry x="140" y="360" width="160" height="100" as="geometry" />
+      </mxCell>
+      
+      <mxCell id="core_processing" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;CORE PROCESSING&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;br&gt;[Filter Icon] JSON Rule Checks&lt;br&gt;&lt;br&gt;[Lock Icon] Buffer State Lock&lt;br&gt;&lt;br&gt;[Sync Icon] Routing &amp; Polling" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1;arcSize=10;verticalAlign=top;spacingTop=10;" parent="1" vertex="1">
+        <mxGeometry x="400" y="280" width="200" height="160" as="geometry" />
+      </mxCell>
+      
+      <mxCell id="machine_learning" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;MACHINE LEARNING&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;br&gt;[Brain Icon]&lt;br&gt;Isolation Forest&lt;br&gt;Anomaly Engine" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1;arcSize=10;verticalAlign=top;spacingTop=10;" parent="1" vertex="1">
+        <mxGeometry x="680" y="280" width="180" height="120" as="geometry" />
+      </mxCell>
+      
+      <mxCell id="data_storage" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;DATA STORAGE&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;br&gt;[Database Icon]&lt;br&gt;SQLite DB &amp; Config" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1;arcSize=10;verticalAlign=top;spacingTop=10;" parent="1" vertex="1">
+        <mxGeometry x="680" y="100" width="140" height="90" as="geometry" />
+      </mxCell>
+      
+      <mxCell id="manager_controls" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;MANAGER CONTROLS&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;br&gt;[Shield Icon]&lt;br&gt;Live Overrides &amp; Retrain" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1;arcSize=10;verticalAlign=top;spacingTop=10;" parent="1" vertex="1">
+        <mxGeometry x="680" y="480" width="160" height="90" as="geometry" />
+      </mxCell>
+      
+      <mxCell id="output_generator" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;OUTPUT GENERATOR&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;br&gt;[Alert Icon] Live Dashboard Alerts&lt;br&gt;&lt;br&gt;[File Icon] EOD CSV Ledgers" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1;arcSize=10;verticalAlign=top;spacingTop=10;" parent="1" vertex="1">
+        <mxGeometry x="920" y="380" width="180" height="160" as="geometry" />
+      </mxCell>
+
+      <!-- Edges -->
+      <mxCell id="edge_ui_to_core" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;Tx Data &amp; Inputs&lt;/font&gt;" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" parent="1" source="user_interface" target="core_processing" edge="1">
+        <mxGeometry relative="1" as="geometry">
+          <mxPoint x="320" y="410" as="sourcePoint" />
+          <mxPoint x="380" y="410" as="targetPoint" />
+          <Array as="points">
+            <mxPoint x="320" y="410" />
+            <mxPoint x="400" y="410" />
+          </Array>
+        </mxGeometry>
+      </mxCell>
+      
+      <mxCell id="edge_core_to_ml_math" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;Cart Math&lt;/font&gt;" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" parent="1" source="core_processing" target="machine_learning" edge="1">
+        <mxGeometry relative="1" as="geometry">
+          <mxPoint x="580" y="360" as="sourcePoint" />
+          <mxPoint x="680" y="360" as="targetPoint" />
+          <Array as="points">
+            <mxPoint x="600" y="360" />
+            <mxPoint x="680" y="360" />
+          </Array>
+        </mxGeometry>
+      </mxCell>
+      
+      <mxCell id="edge_core_to_ml_id" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;Cashier ID&lt;/font&gt;" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" parent="1" source="core_processing" target="machine_learning" edge="1">
+        <mxGeometry relative="1" as="geometry">
+          <mxPoint x="580" y="330" as="sourcePoint" />
+          <mxPoint x="680" y="330" as="targetPoint" />
+          <Array as="points">
+            <mxPoint x="600" y="330" />
+            <mxPoint x="680" y="330" />
+          </Array>
+        </mxGeometry>
+      </mxCell>
+      
+      <mxCell id="edge_core_to_ml_rules" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;Rule Thresholds&lt;/font&gt;" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" parent="1" source="core_processing" target="machine_learning" edge="1">
+        <mxGeometry relative="1" as="geometry">
+          <mxPoint x="580" y="300" as="sourcePoint" />
+          <mxPoint x="680" y="300" as="targetPoint" />
+          <Array as="points">
+            <mxPoint x="600" y="300" />
+            <mxPoint x="680" y="300" />
+          </Array>
+        </mxGeometry>
+      </mxCell>
+      
+      <mxCell id="edge_db_to_ml" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;Neural Baseline&lt;/font&gt;" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" parent="1" source="data_storage" target="machine_learning" edge="1">
+        <mxGeometry relative="1" as="geometry">
+          <mxPoint x="750" y="190" as="sourcePoint" />
+          <mxPoint x="750" y="280" as="targetPoint" />
+          <Array as="points">
+            <mxPoint x="750" y="190" />
+            <mxPoint x="750" y="280" />
+          </Array>
+        </mxGeometry>
+      </mxCell>
+      
+      <mxCell id="edge_ml_to_admin" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;Anomaly Flag [0/1]&lt;/font&gt;" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" parent="1" source="machine_learning" target="manager_controls" edge="1">
+        <mxGeometry relative="1" as="geometry">
+          <mxPoint x="760" y="400" as="sourcePoint" />
+          <mxPoint x="760" y="480" as="targetPoint" />
+          <Array as="points">
+            <mxPoint x="760" y="400" />
+            <mxPoint x="760" y="480" />
+          </Array>
+        </mxGeometry>
+      </mxCell>
+      
+      <mxCell id="edge_admin_to_out" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;Resolution Status&lt;/font&gt;" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" parent="1" source="manager_controls" target="output_generator" edge="1">
+        <mxGeometry relative="1" as="geometry">
+          <mxPoint x="840" y="525" as="sourcePoint" />
+          <mxPoint x="920" y="430" as="targetPoint" />
+          <Array as="points">
+            <mxPoint x="880" y="525" />
+            <mxPoint x="880" y="430" />
+            <mxPoint x="920" y="430" />
+          </Array>
+        </mxGeometry>
+      </mxCell>
+      
+      <mxCell id="edge_core_to_out" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;Approved Tx Logs&lt;/font&gt;" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" parent="1" source="core_processing" target="output_generator" edge="1">
+        <mxGeometry relative="1" as="geometry">
+          <mxPoint x="500" y="440" as="sourcePoint" />
+          <mxPoint x="1010" y="540" as="targetPoint" />
+          <Array as="points">
+            <mxPoint x="500" y="600" />
+            <mxPoint x="1010" y="600" />
+            <mxPoint x="1010" y="540" />
+          </Array>
+        </mxGeometry>
+      </mxCell>
+    </root>
+  </mxGraphModel>
+</mxfile>

@@ -1,0 +1,82 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" version="29.6.6">
+  <diagram name="Page-1" id="Fh3myGhgDUmXqQu3zbqt">
+    <mxGraphModel dx="1332" dy="785" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="SFZYSt8ukMeb4wNUP0Hy-1" parent="1" style="rounded=1;arcSize=20;strokeWidth=2;fillColor=#f8f9fa;strokeColor=#bdc3c7;fontColor=light-dark(#333333,#cccccc);" value="&lt;b&gt;USER INTERFACES&lt;/b&gt;&#xa;&#xa;💻 Employee POS Terminal&#xa;🛡️ Admin Control Center" vertex="1">
+          <mxGeometry height="126" width="225" x="20" y="32" as="geometry" />
+        </mxCell>
+        <mxCell id="SFZYSt8ukMeb4wNUP0Hy-2" parent="1" style="rounded=1;arcSize=20;strokeWidth=2;fillColor=#fffbe0;strokeColor=#b5a642;fontColor=light-dark(#333333,#cccccc);" value="&lt;b&gt;CORE PROCESSING&lt;/b&gt;&#xa;&#xa;⚙️ JSON Rule Checks&#xa;🔒 Buffer State Lock&#xa;🔄 Routing &amp;amp; Polling" vertex="1">
+          <mxGeometry height="150" width="183" x="415" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="SFZYSt8ukMeb4wNUP0Hy-3" parent="1" style="rounded=1;arcSize=20;strokeWidth=2;fillColor=#f8f9fa;strokeColor=#bdc3c7;fontColor=light-dark(#333333,#cccccc);" value="&lt;b&gt;MACHINE LEARNING&lt;/b&gt;&#xa;&#xa;🧠 Isolation Forest&#xa;⚠️ Anomaly Engine" vertex="1">
+          <mxGeometry height="126" width="176" x="760" y="132" as="geometry" />
+        </mxCell>
+        <mxCell id="SFZYSt8ukMeb4wNUP0Hy-4" parent="1" style="shape=cylinder3;boundedLbl=1;backgroundOutline=1;size=10;strokeWidth=2;whiteSpace=wrap;fillColor=#f8f9fa;strokeColor=#bdc3c7;fontColor=light-dark(#333333,#cccccc);" value="&lt;b&gt;DATA STORAGE&lt;/b&gt;&#xa;&#xa;🗄️ SQLite DB &amp;amp; Config" vertex="1">
+          <mxGeometry height="131" width="178" x="417" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="SFZYSt8ukMeb4wNUP0Hy-5" parent="1" style="rounded=1;arcSize=20;strokeWidth=2;fillColor=#f8f9fa;strokeColor=#bdc3c7;fontColor=light-dark(#333333,#cccccc);" value="&lt;b&gt;MANAGER CONTROLS&lt;/b&gt;&#xa;&#xa;👨‍💼 Live Overrides &amp;amp; Retrain" vertex="1">
+          <mxGeometry height="126" width="230" x="1124" y="132" as="geometry" />
+        </mxCell>
+        <mxCell id="SFZYSt8ukMeb4wNUP0Hy-6" parent="1" style="rounded=1;arcSize=20;strokeWidth=2;fillColor=#f8f9fa;strokeColor=#bdc3c7;fontColor=light-dark(#333333,#cccccc);" value="&lt;b&gt;OUTPUT GENERATOR&lt;/b&gt;&#xa;&#xa;🚨 Live Dashboard Alerts&#xa;📄 EOD CSV Ledgers" vertex="1">
+          <mxGeometry height="126" width="211" x="1527" y="32" as="geometry" />
+        </mxCell>
+        <mxCell id="SFZYSt8ukMeb4wNUP0Hy-7" edge="1" parent="1" source="SFZYSt8ukMeb4wNUP0Hy-1" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.5;rounded=0;" target="SFZYSt8ukMeb4wNUP0Hy-2" value="Tx Data &amp; Inputs">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1" as="offset" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SFZYSt8ukMeb4wNUP0Hy-8" edge="1" parent="1" source="SFZYSt8ukMeb4wNUP0Hy-2" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.84;entryX=0;entryY=0.48;rounded=0;" target="SFZYSt8ukMeb4wNUP0Hy-3" value="Cart Math">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="679" y="190" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SFZYSt8ukMeb4wNUP0Hy-9" edge="1" parent="1" source="SFZYSt8ukMeb4wNUP0Hy-2" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.68;entryX=0;entryY=0.3;rounded=0;" target="SFZYSt8ukMeb4wNUP0Hy-3" value="Cashier ID">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="679" y="146" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SFZYSt8ukMeb4wNUP0Hy-10" edge="1" parent="1" source="SFZYSt8ukMeb4wNUP0Hy-2" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.53;entryX=0;entryY=0.12;rounded=0;" target="SFZYSt8ukMeb4wNUP0Hy-3" value="Rule Thresholds">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="679" y="102" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SFZYSt8ukMeb4wNUP0Hy-11" edge="1" parent="1" source="SFZYSt8ukMeb4wNUP0Hy-4" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.87;rounded=0;" target="SFZYSt8ukMeb4wNUP0Hy-3" value="Neural Baseline">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="679" y="285" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SFZYSt8ukMeb4wNUP0Hy-12" edge="1" parent="1" source="SFZYSt8ukMeb4wNUP0Hy-3" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.5;rounded=0;" target="SFZYSt8ukMeb4wNUP0Hy-5" value="Anomaly Flag [0/1]">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SFZYSt8ukMeb4wNUP0Hy-13" edge="1" parent="1" source="SFZYSt8ukMeb4wNUP0Hy-5" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.94;rounded=0;" target="SFZYSt8ukMeb4wNUP0Hy-6" value="Resolution Status">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1440" y="195" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SFZYSt8ukMeb4wNUP0Hy-14" edge="1" parent="1" source="SFZYSt8ukMeb4wNUP0Hy-2" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.37;entryX=0;entryY=0.33;rounded=0;" target="SFZYSt8ukMeb4wNUP0Hy-6" value="Approved Tx Logs">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="679" y="57" />
+              <mxPoint x="1440" y="57" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
