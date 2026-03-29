@@ -26,7 +26,7 @@ This system uses a synchronous, state-managed architecture split into two distin
 
 ## ⚙️ Installation & Setup
 1. Clone the repository:
-   `git clone https://github.com/yourusername/retail-saas-pos.git`
+   `git clone [https://github.com/Akhil-7770/TRANSACTION-ANOMALY-DETECTOR.git](https://github.com/Akhil-7770/TRANSACTION-ANOMALY-DETECTOR.git)`
 2. Install the required dependencies:
    `pip install streamlit pandas scikit-learn joblib`
 3. Run the application:
